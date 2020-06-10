@@ -25,6 +25,10 @@ const Navbar = styled.div`
   z-index: 500;
 `;
 
+const MenuText = styled.h3`
+  font-weight: 300;
+`;
+
 const MainMenu = () => {
   const node = useRef();
   const { isMenuOpen, toggleMenuMode } = useContext(MenuContext);
@@ -39,7 +43,7 @@ const MainMenu = () => {
     <header ref={node}>
       <Navbar>
         <HamburgerButton />
-        <h4>Menu</h4>
+        <MenuText>Menu</MenuText>
       </Navbar>
       <SideMenu />
     </header>

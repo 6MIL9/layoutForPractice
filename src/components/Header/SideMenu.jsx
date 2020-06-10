@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { MenuContext } from '../Context/navState';
 
 const Menu = styled.nav`
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   bottom: 0px;
@@ -33,16 +33,16 @@ export const MenuLink = styled.a`
   max-width: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 16%;
+  padding-left: 26%;
   background-position: 88% 50%;
   background-size: 36px;
   background-repeat: no-repeat;
   transition: background-position 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   text-decoration: none;
   color: #fff;
-  font-size: 32px;
-  line-height: 120%;
-  font-weight: 500;
+  font-size: 24px;
+  line-height: 110%;
+  font-weight: 400;
 
   :hover {
     background-position: 90% 50%;
