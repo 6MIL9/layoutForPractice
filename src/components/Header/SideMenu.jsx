@@ -43,6 +43,7 @@ export const MenuLink = styled.a`
   font-size: 24px;
   line-height: 110%;
   font-weight: 400;
+  font-family: 'Roboto', sans-serif;  
 
   :hover {
     color: white;
@@ -50,6 +51,7 @@ export const MenuLink = styled.a`
 `;
 
 const MenuLinkSignUpButton = styled.a`
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: #44C09C;
   background-color: #FFFFFF;
@@ -62,10 +64,11 @@ const MenuLinkSignUpButton = styled.a`
   padding-top: 15px;
   padding-bottom: 15px;
   margin: 20px auto 0 ;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
 `;
 
 const MenuLinkLoginButton = styled.a`
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: #FFFFFF;
   width: 140px;

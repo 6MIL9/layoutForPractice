@@ -27,6 +27,7 @@ const Navbar = styled.div`
 
 const MenuText = styled.h3`
   font-weight: 300;
+  font-family: 'Roboto', sans-serif;  
 `;
 
 const MainMenu = () => {

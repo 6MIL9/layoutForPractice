@@ -27,6 +27,8 @@ const MenuButton = styled.button`
     span:nth-of-type(3) {
       width: 27px;
     }
+
+    cursor: pointer;
   }
 `;
 
