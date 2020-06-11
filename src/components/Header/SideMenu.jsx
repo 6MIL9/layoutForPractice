@@ -39,15 +39,57 @@ export const MenuLink = styled.a`
   background-repeat: no-repeat;
   transition: background-position 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   text-decoration: none;
-  color: #fff;
+  color: #D4F2E9;
   font-size: 24px;
   line-height: 110%;
   font-weight: 400;
 
   :hover {
-    background-position: 90% 50%;
+    color: white;
   }
 `;
+
+const MenuLinkSignUpButton = styled.a`
+  text-decoration: none;
+  color: #44C09C;
+  background-color: #FFFFFF;
+  width: 140px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 110%;
+  font-weight: 400;
+  max-width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 20px auto 0 ;
+  border-radius: 10px 10px 10px 10px;
+`;
+
+const MenuLinkLoginButton = styled.a`
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 140px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 110%;
+  font-weight: 400;
+  max-width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 25px auto;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 3px #73D0B5;
+
+  :hover {
+  background-color: #52C5A3;
+  }
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+ `;
 
 export const SideMenu = ({ children }) => {
   const { isMenuOpen } = useContext(MenuContext);
@@ -60,10 +102,13 @@ export const SideMenu = ({ children }) => {
 SideMenu.defaultProps = {
   children: (
     <>
-      <MenuLink href="/">Главная</MenuLink>
-      <MenuLink href="/articles">Статьи</MenuLink>
-      <MenuLink href="/about">О сайте</MenuLink>
-      <MenuLink href="/contact">Контакт</MenuLink>
+      <MenuLink href="/">Home</MenuLink>
+      <MenuLink href="/">Generic</MenuLink>
+      <MenuLink href="/">Elements</MenuLink>
+      <ButtonContainer>
+        <MenuLinkSignUpButton href="/">SIGN UP</MenuLinkSignUpButton>
+        <MenuLinkLoginButton href="/">LOG IN</MenuLinkLoginButton>
+      </ButtonContainer>
     </>
   ),
 };
