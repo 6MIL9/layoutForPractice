@@ -30,29 +30,57 @@ const Text = styled.h1`
 `;
 
 const ContentWrapper = styled.div`
-    width: 35%;
+    width: 38%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: absolute;
     z-index: 5;
-    padding:0 6% 0 20%;
+    padding:0 6% 0 14%;
 `;
 
 const Content = styled.div`
-    height: 470px;
+    /* max-height: 420px; */
     width: 100%;
     background-color: white;
     border-radius: 10px;
     display: block;
-    padding: 2rem;
+    padding: 4rem;
+    text-align: left;
 `;
 
 const ContentText = styled.h3`
     font-weight: 400;
     color: #555555;
     font-size: 32px;
+    font-family: 'Roboto', sans-serif;  
+    margin: 0 0 1rem 0;
+`;
+
+const Paragraph = styled.p`
+    color: #888888;
+    font-family: 'Roboto', sans-serif;  
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 2rem 0;
+`;
+
+const Button = styled.a`
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #51CCA8;
+    border-radius: 4px;
+    padding: 0.9rem 2.5rem;
+    width: 22%;
+
+    :hover {
+        cursor: pointer;
+    }
 `;
 
 const SpotlightOne = () => {
@@ -76,7 +104,18 @@ const SpotlightOne = () => {
 
                 <ContentWrapper className="wow fadeInUp" data-wow-offset="100" data-wow-duration="0.8s">
                     <Content>
-                        <ContentText>FACK</ContentText>
+                        <ContentText>
+                            Morbi purus sed libero <br />
+                            faucibus adipiscing
+                        </ContentText>
+
+                        <Paragraph>
+                            Sed egestas, ante et vulputate lorem ipsum dolor sit amet nullam<br />
+                            pede semper est, vitae luctus metus libero eu augue. Morbi purus<br />
+                            sed libero, faucibus adipiscing, gravida lorem ipsum.
+                        </Paragraph>
+
+                        <Button>LEARN MORE</Button>
                     </Content>
                 </ContentWrapper>
             </Inner>
