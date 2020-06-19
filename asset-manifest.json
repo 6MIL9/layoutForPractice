@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/6MIL9/layoutForPractice/static/css/main.a42da264.chunk.css",
+    "main.js": "/6MIL9/layoutForPractice/static/js/main.9665bb87.chunk.js",
+    "main.js.map": "/6MIL9/layoutForPractice/static/js/main.9665bb87.chunk.js.map",
+    "runtime-main.js": "/6MIL9/layoutForPractice/static/js/runtime-main.18c19079.js",
+    "runtime-main.js.map": "/6MIL9/layoutForPractice/static/js/runtime-main.18c19079.js.map",
+    "static/js/2.d1008941.chunk.js": "/6MIL9/layoutForPractice/static/js/2.d1008941.chunk.js",
+    "static/js/2.d1008941.chunk.js.map": "/6MIL9/layoutForPractice/static/js/2.d1008941.chunk.js.map",
+    "index.html": "/6MIL9/layoutForPractice/index.html",
+    "precache-manifest.f4d03879e1656f286e93bd80434b99e5.js": "/6MIL9/layoutForPractice/precache-manifest.f4d03879e1656f286e93bd80434b99e5.js",
+    "service-worker.js": "/6MIL9/layoutForPractice/service-worker.js",
+    "static/css/main.a42da264.chunk.css.map": "/6MIL9/layoutForPractice/static/css/main.a42da264.chunk.css.map",
+    "static/js/2.d1008941.chunk.js.LICENSE.txt": "/6MIL9/layoutForPractice/static/js/2.d1008941.chunk.js.LICENSE.txt",
+    "static/media/Intro.module.scss": "/6MIL9/layoutForPractice/static/media/town.64716e7e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18c19079.js",
+    "static/js/2.d1008941.chunk.js",
+    "static/css/main.a42da264.chunk.css",
+    "static/js/main.9665bb87.chunk.js"
+  ]
+}
