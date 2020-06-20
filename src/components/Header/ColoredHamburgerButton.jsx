@@ -8,7 +8,7 @@ const MenuButton = styled.button`
   float: left;
   outline: 0;
   border: 0;
-  padding: 20px;
+  padding: 20px ;
   background: none;
 
   span {
@@ -29,10 +29,9 @@ const MenuButton = styled.button`
     }
 
     cursor: pointer;
-
   }
 
-&.active {
+  &.active {
     span:nth-of-type(1) {
       transform: rotate(45deg) translate(10px, 9px);
       width: 40px;
@@ -55,7 +54,8 @@ const Bar = styled.span`
   width: 35px;
   height: 4px;
   margin-bottom: 7px;
-  background-color: #fff;
+  background-color: #888888;
+;
 `;
 
 const HamburgerButton = () => {
