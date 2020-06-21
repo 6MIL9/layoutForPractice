@@ -30,7 +30,7 @@ const Title = styled.h1`
     margin: 0;
 
     :after {
-        content: '';
+    content: '';
     background-color: #ffffff;
     display: block;
     height: 3px;
