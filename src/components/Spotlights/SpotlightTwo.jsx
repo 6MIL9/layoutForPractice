@@ -97,13 +97,13 @@ const SpotlightTwo = () => {
                     <img src={require('../../assets/img/SpotlightOne.jpg')} alt="" />
                 </div>
 
-                <Text className="wow fadeInUp" data-wow-duration="0.6s">
+                <Text className="wow fadeIn" data-wow-duration="1s">
                     INTEGIS<br />
                     VITAE UNON<br />
                     LIBETUE
                 </Text>
 
-                <ContentWrapper className="wow fadeInUp" data-wow-offset="100" data-wow-duration="0.6s">
+                <ContentWrapper className="wow fadeIn" data-wow-offset="100" data-wow-duration="1s">
                     <Content>
                         <ContentText>
                             Morbi purus sed libero <br />

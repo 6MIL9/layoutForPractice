@@ -6,26 +6,43 @@ import slideTwo from '../../assets/img/slideTwo.jpg';
 import slideThree from '../../assets/img/slideThree.jpg';
 
 function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const {className, style, onClick} = props;
     return (
-        <div
+        <ArrowNext
             className={className}
-            style={{ ...style, display: "block" }}
+            style={{ ...style}}
+            onClick={onClick}
+        />
+    );
+}
+function SamplePrevArrow(props) {
+    const {className, style, onClick} = props;
+    return (
+        <ArrowPrev
+            className={className}
+            style={{ ...style}}
             onClick={onClick}
         />
     );
 }
 
-function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: "block" }}
-            onClick={onClick}
-        />
-    );
-}
+const ArrowNext = styled.div`
+    :before {
+    color: #FFFFFF;
+    font-size: 4rem;
+    position: absolute;
+    right: -300%;
+    }
+`;
+
+const ArrowPrev = styled.div`
+    :before {
+    color: #FFFFFF;
+    font-size: 4rem;
+    position: absolute;
+    left: -300%;
+    }
+`;
 
 const Wrapper = styled.div`
     height: 120vh;
@@ -57,10 +74,6 @@ const Text = styled.h1`
     }
 `;
 
-const ImgWrapper = styled.div`
-    
-`;
-
 const Img = styled.div`
     height: 92vh;
     background-position: center;
@@ -70,7 +83,6 @@ const Img = styled.div`
 const Content = styled.div`
     font-family: 'Roboto';
     text-align: center;
-    /* height: 50%; */
     background-color: #FFFFFF;
     bottom: 0;
     width: 100%;
@@ -127,13 +139,13 @@ const Slider = () => {
                 <Text>SED ADIPISCING</Text>
 
                 <SliderSlick {...settings}>
-                    <ImgWrapper>
+                    <div>
                         <Img style={{
                             background: `url(${slideOne}) center`
                         }}>
                             <Content>
                                 <ContentText>
-                                    Feugiat lorem ipsum dolor amet
+                                    Feugiat lorem ipsum dolor amet 
                                 </ContentText>
 
                                 <Paragraph>
@@ -144,9 +156,9 @@ const Slider = () => {
                                 <Button>LEARN MORE</Button>
                             </Content>
                         </Img>
-                    </ImgWrapper>
+                    </div>
 
-                    <ImgWrapper>
+                    <div>
                         <Img style={{
                             background: `url(${slideTwo}) center`
                         }}>
@@ -163,26 +175,26 @@ const Slider = () => {
                                 <Button>LEARN MORE</Button>
                             </Content>
                         </Img>
-                    </ImgWrapper>
+                    </div>
 
-                    <ImgWrapper>
+                    <div>
                         <Img style={{
                             background: `url(${slideThree}) center`
                         }}>
                             <Content>
                                 <ContentText>
-                                    Feugiat lorem ipsum dolor amet
+                                    Feugiat lorem ipsum dolor amet  
                                 </ContentText>
 
                                 <Paragraph>
                                     Nullam pede semper est vitae luctus metus. Magna lorem ipsum libero eu adipiscing, commodo quis, gravida lorem <br />
-                                    ipsum. Augue morbi purus sed libero, faucibus sed tempus aliquam lorem ipsum dolor amet.
+                                    ipsum. Augue morbi purus sed libero, faucibus sed tempus aliquam lorem ipsum dolor amet. 
                                 </Paragraph>
 
                                 <Button>LEARN MORE</Button>
                             </Content>
                         </Img>
-                    </ImgWrapper>
+                    </div>
                 </SliderSlick>
             </Inner>
         </Wrapper>
