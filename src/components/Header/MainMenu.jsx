@@ -45,6 +45,8 @@ const ColoredNavbar = styled.div`
   padding: 0 60px;
   z-index: 500;
   background-color: #FFFFFF;
+  box-shadow: 0 0 0.5rem 0 rgba(144, 144, 144, 0.25);
+
 `;
 
 const MenuText = styled.h3`
