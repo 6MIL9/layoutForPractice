@@ -4,23 +4,24 @@ import SliderSlick from "react-slick";
 import slideOne from '../../assets/img/slideOne.jpg';
 import slideTwo from '../../assets/img/slideTwo.jpg';
 import slideThree from '../../assets/img/slideThree.jpg';
+import Slide from './Slide';
 
 function SampleNextArrow(props) {
-    const {className, style, onClick} = props;
+    const { className, style, onClick } = props;
     return (
         <ArrowNext
             className={className}
-            style={{ ...style}}
+            style={{ ...style }}
             onClick={onClick}
         />
     );
 }
 function SamplePrevArrow(props) {
-    const {className, style, onClick} = props;
+    const { className, style, onClick } = props;
     return (
         <ArrowPrev
             className={className}
-            style={{ ...style}}
+            style={{ ...style }}
             onClick={onClick}
         />
     );
@@ -74,54 +75,6 @@ const Text = styled.h1`
     }
 `;
 
-const Img = styled.div`
-    height: 92vh;
-    background-position: center;
-    position: relative;
-`;
-
-const Content = styled.div`
-    font-family: 'Roboto';
-    text-align: center;
-    background-color: #FFFFFF;
-    bottom: 0;
-    width: 100%;
-    color: #555555;
-    position: absolute;
-    display: block;
-    padding: 4rem 0 4rem 0;
-`;
-
-const ContentText = styled.h2`
-    font-weight: 400; 
-    font-size: 32px;
-`;
-
-const Paragraph = styled.p`
-    font-weight: 400; 
-    font-size: 15px;
-    line-height: 2;
-    margin: 0 0 2rem 0;
-`;
-
-const Button = styled.a`
-    font-size: 13px;
-    font-weight: 600;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    background-color: #6E81D0;
-    border-radius: 4px;
-    padding: 0.9rem 2.5rem;
-    width: 7%;
-    color: #FFFFFF;
-    margin: 0 auto;
-
-    :hover {
-        cursor: pointer;
-    }
-`;
-
 const Slider = () => {
 
     const settings = {
@@ -141,60 +94,19 @@ const Slider = () => {
 
                 <SliderSlick {...settings}>
                     <div>
-                        <Img style={{
-                            background: `url(${slideOne}) center`
-                        }}>
-                            <Content>
-                                <ContentText>
-                                    Feugiat lorem ipsum dolor amet 
-                                </ContentText>
-
-                                <Paragraph>
-                                    Nullam pede semper est vitae luctus metus. Magna lorem ipsum libero eu adipiscing, commodo quis, gravida lorem <br />
-                                    ipsum. Augue morbi purus sed libero, faucibus sed tempus aliquam lorem ipsum dolor amet.
-                                </Paragraph>
-
-                                <Button>LEARN MORE</Button>
-                            </Content>
-                        </Img>
+                        <Slide img={slideOne} title="Feugiat lorem ipsum dolor amet"
+                            firstLine="Nullam pede semper est vitae luctus metus. Magna lorem ipsum libero eu adipiscing, commodo quis, gravida lorem"
+                            secondLine="ipsum. Augue morbi purus sed libero, faucibus sed tempus aliquam lorem ipsum dolor amet." />
                     </div>
 
                     <div>
-                        <Img style={{
-                            background: `url(${slideTwo}) center`
-                        }}>
-                            <Content>
-                                <ContentText>
-                                    Feugiat lorem ipsum dolor amet
-                                </ContentText>
-
-                                <Paragraph>
-                                    Nullam pede semper est vitae luctus metus. Magna lorem ipsum libero eu adipiscing, commodo quis, gravida lorem <br />
-                                    ipsum. Augue morbi purus sed libero, faucibus sed tempus aliquam lorem ipsum dolor amet.
-                                </Paragraph>
-
-                                <Button>LEARN MORE</Button>
-                            </Content>
-                        </Img>
+                        <Slide img={slideTwo} title="Magna libero faucibus adipiscing" firstLine="Sed egestas, ante et vulputate lorem ipsum dolor sit amet nullam pede semper est, vitae luctus metus libero" 
+                        secondLine="eu augue. Morbi purus sed libero, faucibus adipiscing, commodo quis, gravida lorem ipsum." />
                     </div>
 
                     <div>
-                        <Img style={{
-                            background: `url(${slideThree}) center`
-                        }}>
-                            <Content>
-                                <ContentText>
-                                    Feugiat lorem ipsum dolor amet  
-                                </ContentText>
-
-                                <Paragraph>
-                                    Nullam pede semper est vitae luctus metus. Magna lorem ipsum libero eu adipiscing, commodo quis, gravida lorem <br />
-                                    ipsum. Augue morbi purus sed libero, faucibus sed tempus aliquam lorem ipsum dolor amet. 
-                                </Paragraph>
-
-                                <Button>LEARN MORE</Button>
-                            </Content>
-                        </Img>
+                        <Slide img={slideThree} title="Aliquam feugiat sed malesuada" firstLine="Sit amet nullam pede semper est, vitae luctus metus libero eu augue. Morbi purus sed egestas, ante et vulputate" 
+                        secondLine="lorem ipsum dolor sit amet nullam. Adipiscing sed nullam tempus aliquam veroeros." />
                     </div>
                 </SliderSlick>
             </Inner>
