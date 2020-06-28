@@ -41,7 +41,6 @@ const ContentWrapper = styled.div`
 `;
 
 const Content = styled.div`
-    /* max-height: 420px; */
     width: 100%;
     background-color: white;
     border-radius: 10px;

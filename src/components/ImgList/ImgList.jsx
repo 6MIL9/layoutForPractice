@@ -7,10 +7,9 @@ import postFour from '../../assets/img/postFour.jpg';
 import Post from './Post.jsx'
 
 const Wrapper = styled.div`
-    height: 200vh;
     background: #FFFFFF;
     color: #555555;
-    padding: 3rem 0 1.5rem 0;
+    padding: 3rem 0 6rem 0;
 `;
 
 const Text = styled.h1`

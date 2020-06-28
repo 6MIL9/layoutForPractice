@@ -46,9 +46,8 @@ const ArrowPrev = styled.div`
 `;
 
 const Wrapper = styled.div`
-    height: 120vh;
     background: #6E81D0;
-    padding: 5rem 0 2.5rem 0;
+    padding: 5rem 0 4rem 0;
 `;
 
 const Inner = styled.div`
@@ -79,12 +78,12 @@ const Slider = () => {
 
     const settings = {
         infinite: true,
-        speed: 500,
+        speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
-        fade: true
+        className: 'slick-slider-fade'
     };
 
     return (

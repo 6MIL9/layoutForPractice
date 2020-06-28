@@ -5,6 +5,8 @@ import SpotlightTwo from '../Spotlights/SpotlightTwo';
 import SpotlightThree from '../Spotlights/SpotlightThree';
 import Slider from '../Slider/Slider';
 import ImgList from '../ImgList/ImgList'
+import Contact from '../Contact/Contact';
+import Footer from './../Footer/Footer';
 
 const Content = () => {
     return (
@@ -15,6 +17,8 @@ const Content = () => {
             <SpotlightThree/>
             <Slider/>
             <ImgList/>
+            <Contact/>
+            <Footer/>
         </div>
     )
 }
