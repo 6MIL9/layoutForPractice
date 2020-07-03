@@ -13,16 +13,15 @@ const Navbar = styled.div`
   right: 0;
   box-sizing: border-box;
   outline: currentcolor none medium;
-  max-width: 100%;
+  max-width: 90%;
   margin: 0px;
   align-items: center;
-  background: none none repeat scroll 0% 0%;
   color: rgb(248, 248, 248);
   min-width: 0px;
   min-height: 0px;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 0 60px;
+  padding: 0 0 0 60px;
   z-index: 500;
 `;
 
@@ -36,13 +35,12 @@ const ColoredNavbar = styled.div`
   max-width: 100%;
   margin: 0px;
   align-items: center;
-  background: none none repeat scroll 0% 0%;
   color: #888888;
   min-width: 0px;
   min-height: 0px;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 0 60px;
+  padding: 0 0 0 60px;
   z-index: 500;
   background-color: #FFFFFF;
   box-shadow: 0 0 0.5rem 0 rgba(144, 144, 144, 0.25);

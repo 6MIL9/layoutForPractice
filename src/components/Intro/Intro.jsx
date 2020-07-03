@@ -21,6 +21,26 @@ const Inner = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 1280px)
+    {
+        top: 50%;
+        height: 400px;
+        width: 500px;
+    }
+    @media screen and (max-width: 980px)
+    {
+        top: 50%;
+        height: 300px;
+        width: 400px;
+    }
+
+    @media screen and (max-width: 480px)
+    {
+        top: 40%;
+        height: 200px;
+        width: 300px;
+    }
 `;
 
 const Title = styled.h1`
@@ -37,15 +57,34 @@ const Title = styled.h1`
     margin: 2rem auto;
     width: 4rem;
     }
+
+    @media screen and (max-width: 1280px)
+    {
+        font-size: 3.5rem;
+    }
+    @media screen and (max-width: 980px)
+    {
+        font-size: 2.75rem;
+    }
 `;
 
 const Paragraph = styled.p`
-    font-size: 15px;
+    font-size: 1rem;
     text-align: center;
-    width: 513px;
     font-family: 'Roboto', sans-serif;
     line-height: 180%;
-    margin: 0 0 37px 0;
+    padding: 0 1rem 2rem 1rem;    
+
+    @media screen and (max-width: 1280px)
+    {
+        font-size: 0.9rem;
+        padding: 0 0 2rem 0;    
+    }
+    @media screen and (max-width: 980px)
+    {
+        font-size: 0.9rem;
+        padding: 0 0 2rem 0;    
+    }
 `;
 
 const Button = styled.a`

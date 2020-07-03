@@ -1,12 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
-import classes from './SpotlightOne.module.scss';
 import WOW from 'wowjs';
+import img from "../../assets/img/SpotlightThree.jpg";
 
 const Wrapper = styled.div`
     position: relative;
     height: 80vh;
     background-color: #5E92CC;
+
+    @media screen and (max-width: 1024px)
+    {
+        height: 95vh;
+    }
+
+    @media screen and (max-width: 625px)
+    {
+        height: 100vh;
+    }
+
+    @media screen and (max-width: 550px)
+    {
+        height: 120vh;
+    }
+
+    @media screen and (max-width: 460px)
+    {
+        height: 130vh;
+    }
+
+
+    @media screen and (max-width: 390px)
+    {
+        height: 100vh;
+    }
 `;
 
 const Inner = styled.div`
@@ -16,6 +42,26 @@ const Inner = styled.div`
     align-items: center;
     color: white;
     justify-content: space-between;
+
+    @media screen and (max-width: 1024px)
+    {
+        flex-direction: column;
+        justify-content: start;
+    }
+`;
+
+const Img = styled.div`
+    height: 100%;
+    width: 45%;
+    background: url(${props => props.img});
+
+    @media screen and (max-width: 1024px)
+    {
+        width: 100%;
+        height: 30%;
+        order: 0;
+        background-position: 50% 50%;
+    }
 `;
 
 const Text = styled.h1`
@@ -27,6 +73,38 @@ const Text = styled.h1`
     font-weight: 400;
     font-size: 54px;
     padding:0 6rem;
+
+    @media screen and (max-width: 1024px)
+    {
+        padding: 4rem 2rem 2rem 2rem;
+        order: 1;
+        height: 4rem;
+        display: block;
+        width: 100%;
+        font-size: 48px;
+        text-align: center;
+        margin: 0;
+
+        br {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 625px)
+    {
+        padding: 2rem 2rem;
+        order: 1;
+        max-height: 8rem;
+        display: block;
+        width: 100%;
+        font-size: 48px;
+        text-align: center;
+        margin: 0;
+
+        br {
+            display: none;
+        }
+    }
 `;
 
 const ContentWrapper = styled.div`
@@ -38,6 +116,20 @@ const ContentWrapper = styled.div`
     position: absolute;
     z-index: 5;
     padding:0 6% 0 14%;
+
+    @media screen and (max-width: 1024px)
+    {
+        max-height: 45%;
+        width: 100%;
+        padding: 0;
+        bottom: 0;
+        order: 3;
+    }
+
+    @media screen and (max-width: 550px)
+    {
+        max-height: 50%;
+    }
 `;
 
 const Content = styled.div`
@@ -47,6 +139,27 @@ const Content = styled.div`
     display: block;
     padding: 4rem;
     text-align: left;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        border-radius: 0;
+        text-align: center;
+        padding: 0 2.5rem;
+        br {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1366px) {
+        border-radius: 0;
+        text-align: center;
+
+        br {
+            display: none;
+        }
+    }
 `;
 
 const ContentText = styled.h3`
@@ -55,6 +168,15 @@ const ContentText = styled.h3`
     font-size: 32px;
     font-family: 'Roboto', sans-serif;  
     margin: 0 0 1rem 0;
+
+    @media screen and (max-width: 1366px) {
+        padding-top: 6rem;
+    }
+
+    @media screen and (max-width: 1024px)
+    {
+        padding-top: 3rem;
+    }
 `;
 
 const Paragraph = styled.p`
@@ -80,6 +202,10 @@ const Button = styled.a`
     :hover {
         cursor: pointer;
     }
+
+    @media screen and (max-width: 1366px) {
+        margin: 0 auto;
+    }
 `;
 
 const SpotlightThree = () => {
@@ -91,9 +217,7 @@ const SpotlightThree = () => {
     return (
         <Wrapper>
             <Inner>
-                <div className={classes.imgWrapper}>
-                    <img src={require('../../assets/img/SpotlightOne.jpg')} alt="" />
-                </div>
+                <Img img={img}/>
 
                 <Text className="wow fadeIn" data-wow-duration="1s">
                     INTEGIS<br />
