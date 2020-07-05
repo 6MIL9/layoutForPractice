@@ -42,16 +42,21 @@ const Paragraph = styled.p`
     }
 `;
 
-const Button = styled.a`
+const ButtonWrapper = styled.div`
     font-size: 13px;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+`;
+
+const Button = styled.a`
     display: block;
     text-align: center;
     text-decoration: none;
     background-color: #6E81D0;
     border-radius: 4px;
     padding: 0.9rem 2.5rem;
-    width: 7%;
     color: #FFFFFF;
     margin: 0 auto;
 
@@ -59,17 +64,6 @@ const Button = styled.a`
         cursor: pointer;
     }
 
-    @media screen and (max-width: 1366px) {
-        width: 10%;
-    }
-
-    @media screen and (max-width: 1024px) {
-        width: 13%;
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 20%;
-    }
 `;
 
 const Slide = (props) => {
@@ -82,11 +76,13 @@ const Slide = (props) => {
                     </ContentText>
 
                     <Paragraph>
-                    {props.firstLine} <br />
-                    {props.secondLine}
+                        {props.firstLine} <br />
+                        {props.secondLine}
                     </Paragraph>
 
-                    <Button>LEARN MORE</Button>
+                    <ButtonWrapper>
+                        <Button>LEARN MORE</Button>
+                    </ButtonWrapper>
                 </Content>
             </Img>
         </>

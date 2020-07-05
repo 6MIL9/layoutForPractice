@@ -6,6 +6,10 @@ import { faMapMarkerAlt, faPhone, faEnvelope, faCopyright } from '@fortawesome/f
 const Wrapper = styled.div`
     background-color: #F2F2F2;
     padding: 6rem 3rem 1rem 3rem;
+
+    @media screen and (max-width: 1024px) {
+        padding: 4rem 3rem 1rem 3rem;
+    }
 `;
 
 const Icons = styled.div`
@@ -15,6 +19,10 @@ const Icons = styled.div`
     justify-content: center;
     color: #888;
     font-family: 'Roboto';
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
 `;
 
 const Link = styled.a`
@@ -44,28 +52,35 @@ const Copyright = styled.div`
     font-family: 'Roboto';
 `;
 
+const Item = styled.div`
+    @media screen and (max-width: 1024px) {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+`;
+
 const Footer = () => {
     return (
         <Wrapper>
             <Icons>
-                <div>
+                <Item>
                     <IconWrapper>
                         <FontAwesomeIcon icon={faMapMarkerAlt} color="#555" />
                     </IconWrapper>
                     <Link >1234 Fictional Street #5432 Nashville, TN 00000-0000</Link>
-                </div>
-                <div>
+                </Item>
+                <Item>
                     <IconWrapper>
                         <FontAwesomeIcon icon={faPhone} color="#555" />
                     </IconWrapper>
                     <Link >(000) 000-0000</Link>
-                </div>
-                <div>
+                </Item>
+                <Item>
                     <IconWrapper>
                         <FontAwesomeIcon icon={faEnvelope} color="#555" />
                     </IconWrapper>
                     <Link >info@untitled.tld</Link>
-                </div>
+                </Item>
             </Icons>
 
             <Copyright>

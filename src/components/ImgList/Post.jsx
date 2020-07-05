@@ -11,8 +11,8 @@ const ImgWrapper = styled.div`
 const Img = styled.div`
     width: 100%;
     height: 100%;
-    background-position: center;
     background: url(${props => props.img}) center;
+    background-size: cover;
     display: block;
     box-shadow: 0 0 0.5rem 0 rgba(191,191,199,1);
     transition: 0.3s;
@@ -43,31 +43,43 @@ const Paragraph = styled.p`
     font-size: 15px;
     line-height: 2;
     margin: 0 0 2rem 0;
+
+    @media screen and (max-width: 768px) {
+        br {
+            display: none;
+        }
+    }
+`;
+
+const ButtonWrapper = styled.div`
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
 `;
 
 const Button = styled.a`
-    font-size: 13px;
-    font-weight: 600;
     display: block;
     text-align: center;
     text-decoration: none;
     background-color: ${props => props.color};
     border-radius: 4px;
     padding: 0.9rem 2.5rem;
-    width: 17%;
     color: #FFFFFF;
     margin: 0 auto;
 
     :hover {
         cursor: pointer;
     }
+
 `;
 
 const Post = (props) => {
     return (
         <>
             <ImgWrapper>
-            <Img img={props.img}></Img>
+                <Img img={props.img}></Img>
             </ImgWrapper>
             <Content>
                 <ContentText>
@@ -80,7 +92,9 @@ const Post = (props) => {
                     {props.thirdLine}
                 </Paragraph>
 
-                <Button color={props.color}>LEARN MORE</Button>
+                <ButtonWrapper>
+                    <Button color={props.color}>LEARN MORE</Button>
+                </ButtonWrapper>
             </Content>
         </>
     );

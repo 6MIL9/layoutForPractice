@@ -37,6 +37,10 @@ const List = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
 `;
 
 const ItemOne = styled.div`
@@ -44,7 +48,11 @@ const ItemOne = styled.div`
     text-align: center;
     width: calc(50% - 1.5rem);
     padding: 0 1.5rem 1.5rem 0; 
-    overflow: hidden;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        padding: 0 0 3rem 0; 
+    }
 `;
 
 const ItemTwo = styled.div`
@@ -52,6 +60,11 @@ const ItemTwo = styled.div`
     text-align: center;
     width: calc(50% - 1.5rem);
     padding: 0 0 1.5rem 1.5rem; 
+    
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        padding: 0 0 3rem 0; 
+    }
 `;
 
 const ItemThree = styled.div`
@@ -59,6 +72,11 @@ const ItemThree = styled.div`
     text-align: center;
     width: calc(50% - 1.5rem);
     padding: 1.5rem 1.5rem 0 0; 
+    
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        padding: 0 0 3rem 0; 
+    }
 `;
 
 const ItemFour = styled.div`
@@ -66,6 +84,11 @@ const ItemFour = styled.div`
     text-align: center;
     width: calc(50% - 1.5rem);
     padding: 1.5rem 0 0 1.5rem; 
+    
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        padding: 0 0 3rem 0; 
+    }
 `;
 
 const ImgList = () => {

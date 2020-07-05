@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     background-color: #51CCA8;
     text-align: center;
-    padding: 4rem 0 5rem 0;
-`;
+    padding: 4rem 2rem 5rem 2rem;
+`;  
 
 const Text = styled.h1`
     color: #FFF;
@@ -29,6 +29,13 @@ const Paragraph = styled.div`
     font-family: 'Roboto';
     margin: 0 0 2.5rem 0;
     line-height: 1.8;
+    padding: 0 2rem;
+
+    @media screen and (max-width: 768px) {
+        br {
+            display: none;
+        }
+    }
 `;
 
 const Form = styled.form`
@@ -36,6 +43,10 @@ const Form = styled.form`
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 const Email = styled.input`
@@ -63,6 +74,10 @@ const Email = styled.input`
 
     :focus {
         outline: #6E81D0 solid 2px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 1rem;
     }
 `;
 
