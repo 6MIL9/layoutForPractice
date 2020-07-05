@@ -34,6 +34,10 @@ const ArrowNext = styled.div`
     position: absolute;
     right: -300%;
     }
+
+    @media screen and (max-width: 1366px) {
+        margin-right: 1rem;
+    }
 `;
 
 const ArrowPrev = styled.div`
@@ -42,6 +46,10 @@ const ArrowPrev = styled.div`
     font-size: 4rem;
     position: absolute;
     left: -300%;
+    }
+
+    @media screen and (max-width: 1366px) {
+        margin-left: 1rem;
     }
 `;
 
@@ -55,6 +63,10 @@ const Inner = styled.div`
     margin: 0 auto;
     max-width: 75rem;
     width: calc(100% - 6rem);
+
+    @media screen and (max-width: 1024px) {
+        width: calc(100% - 7rem);
+    }
 `;
 
 const Text = styled.h1`

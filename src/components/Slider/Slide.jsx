@@ -23,6 +23,8 @@ const Content = styled.div`
 const ContentText = styled.h2`
     font-weight: 400; 
     font-size: 32px;
+    padding: 0 2rem;
+
 `;
 
 const Paragraph = styled.p`
@@ -30,6 +32,14 @@ const Paragraph = styled.p`
     font-size: 15px;
     line-height: 2;
     margin: 0 0 2rem 0;
+
+    @media screen and (max-width: 1024px) {
+        br {
+            display: none;
+        }
+
+        padding: 0 2rem;
+    }
 `;
 
 const Button = styled.a`
@@ -47,6 +57,18 @@ const Button = styled.a`
 
     :hover {
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 1366px) {
+        width: 10%;
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 13%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 20%;
     }
 `;
 
