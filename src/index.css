@@ -27,7 +27,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  overflow-x: hidden; /*для горизонтального*/
+  overflow-x: hidden; 
 }
 
 code {

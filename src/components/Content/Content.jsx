@@ -11,14 +11,14 @@ import Footer from './../Footer/Footer';
 const Content = () => {
     return (
         <div>
-            <Intro/>
-            <SpotlightOne/>
-            <SpotlightTwo/>
-            <SpotlightThree/>
-            <Slider/>
-            <ImgList/>
-            <Contact/>
-            <Footer/>
+            <Intro />
+            <SpotlightOne />
+            <SpotlightTwo />
+            <SpotlightThree />
+            <Slider />
+            <ImgList />
+            <Contact />
+            <Footer />
         </div>
     )
 }

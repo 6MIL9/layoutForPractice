@@ -98,24 +98,24 @@ const ImgList = () => {
                 <Text>ANTE LIBERO</Text>
                 <List>
                     <ItemOne>
-                        <Post color="#51CCA8" title="Sed faucibus" firstLine="Sed egestas, ante et vulputate lorem ipsum sed dolor sit amet" 
-                        secondLine="Morbi purus sed libero, faucibus adipiscing, commodo quis." 
-                        thirdLine="Lorem ipsum dolor sit amet nullam sed adipiscing." img={postOne}/>
+                        <Post color="#51CCA8" title="Sed faucibus" firstLine="Sed egestas, ante et vulputate lorem ipsum sed dolor sit amet." 
+                        secondLine=" Morbi purus sed libero, faucibus adipiscing, commodo quis." 
+                        thirdLine=" Lorem ipsum dolor sit amet nullam sed adipiscing." img={postOne}/>
                     </ItemOne>
                     <ItemTwo>
-                        <Post color="#51B9CC" title="Morbi commodo" firstLine="Sed egestas, ante et vulputate lorem ipsum sed dolor sit amet" 
-                        secondLine="Morbi purus sed libero, faucibus adipiscing, commodo quis." 
-                        thirdLine="Lorem ipsum dolor sit amet nullam sed adipiscing." img={postTwo}/>
+                        <Post color="#51B9CC" title="Morbi commodo" firstLine="Sed egestas, ante et vulputate lorem ipsum sed dolor sit amet." 
+                        secondLine=" Morbi purus sed libero, faucibus adipiscing, commodo quis." 
+                        thirdLine=" Lorem ipsum dolor sit amet nullam sed adipiscing." img={postTwo}/>
                     </ItemTwo>
                     <ItemThree>
-                        <Post color="#5E92CC" title="Tempus lorem" firstLine="Sed egestas, ante et vulputate lorem ipsum sed dolor sit amet" 
-                        secondLine="Morbi purus sed libero, faucibus adipiscing, commodo quis." 
-                        thirdLine="Lorem ipsum dolor sit amet nullam sed adipiscing." img={postThree}/>
+                        <Post color="#5E92CC" title="Tempus lorem" firstLine="Sed egestas, ante et vulputate lorem ipsum sed dolor sit amet." 
+                        secondLine=" Morbi purus sed libero, faucibus adipiscing, commodo quis." 
+                        thirdLine=" Lorem ipsum dolor sit amet nullam sed adipiscing." img={postThree}/>
                     </ItemThree>
                     <ItemFour>
                         <Post color="#6E81D0" title="Libero adipiscing" firstLine="Sed egestas, ante et vulputate lorem ipsum sed dolor sit amet" 
-                        secondLine="Morbi purus sed libero, faucibus adipiscing, commodo quis." 
-                        thirdLine="Lorem ipsum dolor sit amet nullam sed adipiscing." img={postFour}/>
+                        secondLine=" Morbi purus sed libero, faucibus adipiscing, commodo quis." 
+                        thirdLine=" Lorem ipsum dolor sit amet nullam sed adipiscing." img={postFour}/>
                     </ItemFour>
                 </List>
             </Inner>

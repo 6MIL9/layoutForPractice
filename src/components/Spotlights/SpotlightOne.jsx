@@ -4,35 +4,9 @@ import WOW from 'wowjs';
 import img from "../../assets/img/SpotlightOne.jpg";
 
 const Wrapper = styled.div`
-    position: relative;
     height: 80vh;
+    position: block;
     background-color: #51CCA8;
-
-    @media screen and (max-width: 1024px)
-    {
-        height: 95vh;
-    }
-
-    @media screen and (max-width: 625px)
-    {
-        height: 100vh;
-    }
-
-    @media screen and (max-width: 550px)
-    {
-        height: 120vh;
-    }
-
-    @media screen and (max-width: 460px)
-    {
-        height: 130vh;
-    }
-
-
-    @media screen and (max-width: 390px)
-    {
-        height: 100vh;
-    }
 `;
 
 const Inner = styled.div`
@@ -43,13 +17,11 @@ const Inner = styled.div`
     color: white;
     justify-content: space-between;
 
-
     @media screen and (max-width: 1024px)
     {
         flex-direction: column;
         justify-content: start;
     }
-
 `;
 
 const Img = styled.div`
@@ -61,9 +33,15 @@ const Img = styled.div`
     @media screen and (max-width: 1024px)
     {
         width: 100%;
-        height: 30%;
+        height: 70vh;
         order: 0;
         background-position: 50% 35%;
+
+    }
+
+    @media screen and (max-width: 320px)
+    {
+        min-width: 320px;
     }
 `;
 
@@ -75,35 +53,19 @@ const Text = styled.h1`
     align-items: center;
     font-weight: 400;
     font-size: 54px;
-    padding:0 6rem;
+    padding: 0 6rem;
     margin: 0;
 
     @media screen and (max-width: 1024px)
     {
-        padding: 4rem 2rem 2rem 2rem;
-        order: 1;
-        height: 4rem;
-        display: block;
-        width: 100%;
-        font-size: 48px;
+        width: auto;
+        height: auto;
+        padding: 2rem;
+        margin: 0 auto;
+        font-size: 2rem;
+        display: inline-block;
         text-align: center;
-        margin: 0;
-
-        br {
-            display: none;
-        }
-    }
-
-    @media screen and (max-width: 625px)
-    {
-        padding: 2rem 2rem;
-        order: 1;
-        max-height: 8rem;
-        display: block;
-        width: 100%;
-        font-size: 48px;
-        text-align: center;
-        margin: 0;
+        min-width: 320px;
 
         br {
             display: none;
@@ -122,47 +84,47 @@ const ContentWrapper = styled.div`
 
     @media screen and (max-width: 1024px)
     {
-        max-height: 45%;
         width: 100%;
         padding: 0;
         bottom: 0;
         order: 3;
+        position: relative;
     }
-
-    @media screen and (max-width: 550px)
-    {
-        max-height: 50%;
-    }
+    
 `;
 
 const Content = styled.div`
-    max-height: 70%;
+    max-height: 50%;
     width: 100%;
     background-color: white;
     border-radius: 10px;
     display: block;
     padding: 4rem;
     text-align: left;
-
-    @media screen and (max-width: 1024px) {
-        width: 100%;
+    
+    @media screen and (max-width: 1366px) {
         height: 100%;
-        max-height: 100%;
         border-radius: 0;
         text-align: center;
-        padding: 0 2.5rem;
+        
         br {
             display: none;
         }
     }
 
-    @media screen and (max-width: 1366px) {
-        border-radius: 0;
-        text-align: center;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        max-height: 100%;
+        padding: 0 2.5rem;
 
         br {
             display: none;
         }
+    }
+
+    @media screen and (max-width: 480px)
+    {
+        padding: 0 1rem; 
     }
 `;
 
@@ -172,15 +134,17 @@ const ContentText = styled.h3`
     font-size: 32px;
     font-family: 'Roboto', sans-serif;  
     margin: 0 0 1rem 0;
-    padding-top: 2rem;
+    padding-top: 3rem; 
 
-    @media screen and (max-width: 1366px) {
-        padding-top: 6rem;
+
+    @media screen and (max-width: 1280px) {
+        padding-top: 2rem; 
     }
-
-    @media screen and (max-width: 1024px)
+    
+    @media screen and (max-width: 480px)
     {
-        padding-top: 3rem;
+        width: 320px;
+        margin: 0 auto 1rem auto;
     }
 `;
 
@@ -190,6 +154,14 @@ const Paragraph = styled.p`
     font-size: 16px;
     line-height: 1.8;
     margin: 0 0 2rem 0;
+    display: block;
+
+    @media screen and (max-width: 480px)
+    {
+        font-size: 14px;
+        width: 320px;
+        margin: 0 auto 2rem auto;
+    }
 `;
 
 const Button = styled.a`
@@ -203,17 +175,23 @@ const Button = styled.a`
     border-radius: 4px;
     padding: 0.9rem 2.5rem;
     width: 22%;
-
     :hover {
         cursor: pointer;
     }
-
     @media screen and (max-width: 1366px) {
         margin: 0 auto;
     }
 
-`;
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 2rem; 
+    }
 
+    @media screen and (max-width: 480px)
+    {
+        width: 320px;
+        margin: 0 auto 2rem auto;
+    }
+`;
 const SpotlightOne = () => {
 
     React.useEffect(() => {

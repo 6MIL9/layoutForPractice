@@ -87,7 +87,7 @@ const Post = (props) => {
                 </ContentText>
 
                 <Paragraph>
-                    {props.firstLine}<br />
+                    {props.firstLine}<br /> 
                     {props.secondLine}<br />
                     {props.thirdLine}
                 </Paragraph>
